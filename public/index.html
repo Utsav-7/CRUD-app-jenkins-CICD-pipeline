@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product CRUD Operation</title>
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src='./js/script.js' defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        <form id="productForm">
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+            <br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <br><br>
+            <button type="submit">Add Product</button>
+            <button type="button" onclick="updateProduct()">Update Product</button>
+        </form>
+        <h2>Product List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" id="totalsRow"></td>
+                </tr>
+            </tfoot>
+        </table>
+		<button type="button" onclick="printBill()" style="margin-left:250px;margin-top:15px;" >Print Bill</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
